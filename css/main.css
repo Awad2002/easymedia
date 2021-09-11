@@ -6,6 +6,10 @@ body {
     width: 100vw;
 }
 
+#about-page {
+    height: 2000px;
+}
+
 .hero {
     background-image: url('../img/hero-back.svg');
     height: 100vh;
@@ -15,12 +19,70 @@ body {
     position: relative;
 }
 
+#about-page .hero {
+    background-image: url('../img/about-back.svg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    position: relative;
+}
+
+#about-page .hero .navbar.fixed-top.scrolled .nav-link.active {
+    border-bottom: 3px solid #EB5001;
+}
+
+#about-page .hero .navbar .nav-link.active {
+    border-bottom: 3px solid #fff;
+}
+
+#about-page .newsletter {
+    width: 100%;
+}
+
+#about-page .one {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#about-page .one.two {
+    background-color: #EB5001;
+}
+
+#about-page .one .box {
+    background-color: #FFEEBF;
+    transform: skewY(1.3deg);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#about-page .one .box.box2 {
+    background-color: #fff;
+    transform: skewY(-1.3deg);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#about-page .one .box .video-box {
+    background-color: #EB5001;
+    padding: 270px;
+    background-image: url('../img/about-back.svg');
+}
+
 .center {
     position: absolute;
-    top: 49%;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+}
+
+.centert {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
 }
 
 nav .nav-link {
@@ -36,6 +98,14 @@ nav .nav-link:hover {
     border-bottom: 2px solid #000;
 }
 
+#about-page .navbar.fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+
+#about-page .navbar.fixed-top.scrolled .nav-link {
+    color: #000 !important;
+}
 .video-circle {
     position: absolute;
     top: 33.8%;

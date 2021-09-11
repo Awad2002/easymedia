@@ -96,5 +96,20 @@ $('.fgfg').owlCarousel({
           items:3
       }
   }
-})
+});
 
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar.fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		autoScrolling:true,
+		scrollHorizontally: true
+	});
+
+	$.fn.fullpage.setAllowScrolling(true);
+});
