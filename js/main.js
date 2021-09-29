@@ -104,12 +104,3 @@ $(function () {
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
 });
-
-$(document).ready(function() {
-	$('#fullpage').fullpage({
-		autoScrolling:true,
-		scrollHorizontally: true
-	});
-
-	$.fn.fullpage.setAllowScrolling(true);
-});

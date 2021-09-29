@@ -58,6 +58,9 @@ body {
     overflow: hidden;
 }
 
+.bg-primary {
+    background-color: #F39200 !important;
+}
 #about-page .one .box.box2 {
     background-color: #fff;
     transform: skewY(-1.3deg);
